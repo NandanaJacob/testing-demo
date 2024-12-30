@@ -8,9 +8,9 @@ public class testing {
         //for(int i=0; i<arr.length; i++)
         for(int num:arr)
         {
-            if(gr<arr[num])
+            if(gr<num)
             {
-                gr = arr[num];
+                gr = num;
             }
         }
         System.out.println(gr);
