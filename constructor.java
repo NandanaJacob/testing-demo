@@ -1,4 +1,4 @@
-import org.w3c.dom.css.Rect;
+//import org.w3c.dom.css.Rect;
 
 class Rectangle{
     int l, b;
