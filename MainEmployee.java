@@ -38,6 +38,29 @@ public class MainEmployee {
 		for(int i=0;i<e.length;i++)
 		System.out.println(e[i]);
 
+        //____________________________________________________________________________
+        //wrote a method to create changes in this e[]
+        //below is how we use this function in main
+        /* 
+        Employee emp[] = new Employee[2];
+		emp[0] = new Employee(sal, "Tilaka", sal);
+		emp[1] = new Employee("Sandy");
+		System.out.println(changes(emp));
+		
+		for(Employee name : emp)
+			System.out.println(name.getName());
+		
+		
+	}
+	
+	public static String changes(Employee e[])
+	{
+		Employee temp[]=new Employee[1];
+		temp[0] = new Employee("Thilaga");
+		e=temp;
+		return e[0].getName();
+	}
+        */
         sc.close();
     }
 }
