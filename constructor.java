@@ -21,6 +21,12 @@ class Rectangle{
      * }
      * 
      * NOTE: overloading has happened with Rectangle constructor.
+     * 
+     * NOTE: even if Rectangle() constructor is not created in rectangle class and we write 
+     * Rectangle r1 = new Rectangle() in main function
+     * then an implicit code is created like
+     * Rectangle() { super() or smthign}
+     * this will allow u to work with that r1
      */
 
 
