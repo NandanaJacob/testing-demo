@@ -26,6 +26,10 @@ public class Employee {
         this.name = name;
         this.sal = sal;
     }
+    @Override
+	public String toString() {
+		return "Employee [id=" + id + ", name=" + name + ", sal=" + sal + "]";
+	}
 
     
 }

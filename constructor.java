@@ -41,5 +41,6 @@ public class constructor {
         r1.disp();
         Rectangle r2 = new Rectangle(100, 200);
         r2.disp();
+        
     }
 }
