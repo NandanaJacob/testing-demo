@@ -3,8 +3,8 @@ public class InterAdapter implements inter2, inter1
 	public static void main(String[] args) {
 		inter2 n1;
 		n1 = new InterAdapter();
-		//n1.method4(); ====> could be done in 1.8 version of java or smthing
-
+		//n1.method4(); ====> not correct
+		inter2.method4();
 	}
  
 	@Override
