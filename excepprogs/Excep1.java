@@ -11,25 +11,26 @@ public class Excep1 {
         //note that for every single possible error, u need a seperate catch block
 		try
 		{
-		System.out.println(a/b);
-        System.out.println(c[7]);
-		System.out.println("Inside try");
+			try{
+        		System.out.println(c[7]);
+				System.out.println("Inside inner try");
+			}
+			catch(ArrayIndexOutOfBoundsException ai){
+				System.out.println(ai);
+			}
+			System.out.println(a/b);
+			System.out.println("Inside outer try");
 		}
         //catch(Exception e)
-        catch(ArithmeticException|ArrayIndexOutOfBoundsException ae)
-        {
-            System.out.println(ae);
-        }
-        /* 
+        //catch(ArithmeticException|ArrayIndexOutOfBoundsException ae)
+        //{
+        //    System.out.println(ae);
+        //} 
 		catch(ArithmeticException ae)
 		{
 			System.out.println(ae);
 		}
-        catch(ArrayIndexOutOfBoundsException ai)
-        {
-            System.out.println(ai);
-        }
-            */
+            
 		finally{
 			System.out.println("from finally block");
 		}
