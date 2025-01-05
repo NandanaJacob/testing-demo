@@ -18,27 +18,40 @@ public class StatcEx {
     }
 }
 /* 
- public class StaticEx {
+java.lang.System.*;
+ 
+public class StaticEx { // Top level classes cannot be static
 	
 	//static int a=0;
+	static class inner // inner class
+	{
+		
+	}
 	StaticEx()
 	{
-		System.out.println("Constructor");
+		out.println("Constructor");
 	}
 	static
 	{
-		System.out.println("I am static block");
+		out.println("I am static block");
+	}
+	
+	void show()
+	{
+		out.println(Math.sqrt(4));
 	}
 	
 	{
-		System.out.println("I am a not-static block");
+		out.println("I am a not-static block");
 	}
 	public static void main(String[] args) {
 	
 		System.out.println("I am main");
 			StaticEx st = new StaticEx();
+			st.show();
  
 	}
 }
  
+has context menu
  */

@@ -30,6 +30,9 @@ public class Excep1 {
             System.out.println(ai);
         }
             */
+		finally{
+			System.out.println("from finally block");
+		}
 		
 		System.out.println("After Exception");
 	}
