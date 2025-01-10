@@ -11,7 +11,7 @@ public class LargestAndSmallest {
         // Declare the array
         int[] numbers = new int[size];
 
-        // Get the elements of the array from the user
+        // Get the elements of the array from the user1
         System.out.println("Enter " + size + " integers:");
         for (int i = 0; i < size; i++) {
             numbers[i] = scanner.nextInt();
