@@ -1,7 +1,5 @@
-public void setAvailability(boolean b) {
-    //     throw new UnsupportedOperationException("Unimplemented method 'setAvailability'");
-    // }
-
-    // public boolean isAvailable() {
-    //     throw new UnsupportedOperationException("Unimplemented method 'isAvailable'");
-    // }
+Thread producer = new Thread(() -> { //lambda expression
+        //     for (int i = 1; i <= 5; i++) {
+        //         resource.produce(i);
+        //     }
+        // });
