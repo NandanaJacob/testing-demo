@@ -3,12 +3,15 @@ package collectionprog;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.ListIterator;
+//import java.util.LinkedList.LinkedList();
 
 public class LinkListEx {
+    @SuppressWarnings("unchecked")
     public static void main(String[] args) {
         //either directly create instance of linked list
         //or create reference variable of linkedlist and instantiate it
 
+        @SuppressWarnings("rawtypes")
         List l1 = new LinkedList(); //douvly linked list
         l1.add(10);
         l1.add(20);
