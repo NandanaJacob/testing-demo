@@ -9,7 +9,8 @@ import org.json.simple.parser.JSONParser;
  
 public class ReadJson{
  
-	public static void main(String[] args) {
+	@SuppressWarnings("unchecked")
+    public static void main(String[] args) {
 		JSONParser jsonParse = new JSONParser();
 		try
 		{
@@ -25,6 +26,19 @@ public class ReadJson{
 			System.out.println(e);
 		}
 		//parseEmp(null);
+        //my trial begins
+        try{
+            FileReader r = new FileReader("library.json");
+            Object o = jsonParse.parse(r);
+            JSONArray lib = (JSONArray) o;
+            System.out.println(lib);
+
+            lib.forEach(book-> printLib((JSONObject) book));
+            
+            
+        }catch(Exception e){
+            System.out.println(e);
+        }
 	}
 	
 	static void parseEmp(JSONObject employee)
@@ -32,5 +46,12 @@ public class ReadJson{
 		String empName = (String)employee.get("Name");
 		System.out.println(empName);
 	}
+    static void printLib(JSONObject book){
+        String title = (String)book.get("Title");
+        String author = (String)book.get("author");
+        System.out.println("title = " + title);
+        System.out.println("author = " + author);
+    }
+
 }
  

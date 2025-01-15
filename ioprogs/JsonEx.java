@@ -35,6 +35,24 @@ public class JsonEx {
 			System.out.println(e);
 		}
 		
+		//my trial
+		JSONObject book1 = new JSONObject();
+		book1.put("Title", "Harry Potter");
+		book1.put("author", "JK Rowling");
+		JSONObject book2 = new JSONObject();
+		book2.put("Title", "Hunger Games");
+		book2.put("author", "Suzanne Collins");
+		JSONArray lib = new JSONArray();
+		lib.add(book1);
+		lib.add(book2);
+
+		try{
+			FileWriter f = new FileWriter("library.json");
+			f.write(lib.toJSONString());
+			f.flush();
+		}catch(Exception e){
+			System.out.println(e);
+		}
 	
 	}
 }			
