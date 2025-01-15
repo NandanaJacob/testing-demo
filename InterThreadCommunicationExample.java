@@ -91,3 +91,24 @@ public class InterThreadCommunicationExample {
 // notifyAll() 
 // from the Object class to facilitate communication between threads. 
 // These methods must be used within a synchronized block or method.
+
+// 1. Why use the synchronized keyword for produce and consume methods?
+// The synchronized keyword ensures mutual exclusion, meaning that only one thread 
+// (either the producer or the consumer) can access the produce or consume method 
+// at any given time. 
+
+// ConsumerTask creates only a reference. Why not create an instance of SharedResource?
+// Creating a new instance of SharedResource in both ProducerTask and ConsumerTask would 
+// mean that each thread operates on its own separate instance of the shared resource. 
+// This defeats the purpose of inter-thread communication because:
+
+// Shared State: Inter-thread communication requires both the producer and the consumer 
+// to operate on the same shared resource. Creating separate instances would mean no shared 
+// state to coordinate between the two threads.
+// Correct Coordination: With a single shared instance, the producer can notify the consumer 
+// when new data is available, and the consumer can notify the producer when the data has been
+// consumed. This coordination is essential and relies on a common object.
+
+// By passing the same SharedResource instance to both ProducerTask and ConsumerTask, 
+// we ensure that they interact with the same data and synchronization mechanism.
+
