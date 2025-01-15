@@ -1,3 +1,7 @@
+package ioprogs;
+
+import java.io.FileWriter;
+
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
  //look up videos on json
@@ -31,13 +35,9 @@ public class JsonEx {
 			System.out.println(e);
 		}
 		
-		
-		
+	
 	}
 }			
- 
-has context menu
-Compose
 
 
 // import java.io.FileReader;
