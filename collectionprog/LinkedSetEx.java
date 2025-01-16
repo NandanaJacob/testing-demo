@@ -8,10 +8,10 @@ public class LinkedSetEx {
         hs.add("nandana");
         hs.add("lakshmi");
         hs.add("jacob");
-        System.out.println(hs); //printed in different order
-        //=> data stored in set is unordered
+        System.out.println(hs); //printed in same order
+        //=> data stored in set is ordered
         hs.add("naomi");
-        System.out.println(hs); //naomi is entered anywhere btw the other names
+        System.out.println(hs); //naomi is entered in the end
         //adding duplicates:
         hs.add("nandana");
         //wont show any errors in compile or runtime

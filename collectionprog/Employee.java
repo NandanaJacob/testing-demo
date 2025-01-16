@@ -1,6 +1,6 @@
 package collectionprog;
 
-public class Employee {
+public class Employee{ //implements Comparable<Employee> 
     private int id;
     private String name;
     private int sal;
@@ -32,6 +32,9 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", sal=" + sal + "]";
 	}
-
+    // @Override
+    // public int compareTo(Employee other) {
+    //     return Integer.compare(this.id, other.id); // Compare based on ID
+    // }
     
 }

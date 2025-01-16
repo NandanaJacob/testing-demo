@@ -1,4 +1,4 @@
-public class Employee {
+public class Employee implements Comparable<Employee> {
     private int id;
     private String name;
     private int sal;
@@ -30,6 +30,9 @@ public class Employee {
 	public String toString() {
 		return "Employee [id=" + id + ", name=" + name + ", sal=" + sal + "]";
 	}
-
-    
+    //adding compareTo function from Compare interface to compare based on id
+    @Override
+    public int compareTo(Employee other) {
+        return Integer.compare(this.id, other.id); // Compare based on ID
+    }
 }
