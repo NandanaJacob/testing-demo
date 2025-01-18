@@ -3,9 +3,9 @@ import java.util.*;
 public class EmpSet {
     public static void main(String[] args) {
         //You can define a custom Comparator to specify the sorting logic externally.
-        Comparator<Employee> bySalary = Comparator.comparingInt(Employee::getSal);
+        // Comparator<Employee> bySalary = Comparator.comparingInt(Employee::getSal);
 
-        TreeSet hs = new TreeSet<>(bySalary); //no need of (bySalary) if option2
+        TreeSet hs = new TreeSet<>(); //no need of (bySalary) if option2
         //if it was
         //LinkedHashSet hs = new LinkedHashSet<>();
         //HashSet hs = new HashSet<>();
