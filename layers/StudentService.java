@@ -24,6 +24,9 @@ public class StudentService {
     public void update(int id, String name, int newid, String course){
         repo.updateByID(id, name, newid, course);
     }
+    public void updateobject(int id, Student s){
+        repo.updateByID_object(id, s);
+    }
     public void delete(int id){
         repo.deleteByID(id);
     }

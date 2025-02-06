@@ -20,7 +20,7 @@ public class StudentRepository {
     public Student findByID(int id){
         return students.stream().filter(st -> st.getId()==id).findFirst().orElse(null);
     }
-    //function to updatei
+    //function to updateid
     public void updateByID(int id, String name, int newid, String course){
         System.out.println("student of id " + id + " is updated. ");
         Student student = students.stream().filter(st -> st.getId()==id).findFirst().orElse(null);
@@ -34,6 +34,18 @@ public class StudentRepository {
         student.setId(newid);
         student.setName(name);
         student.setCourse(course);
+    }
+    //maam suggested this is better for update():
+    public void updateByID_object(int id, Student std){
+        System.out.println("student of id " + id + " is updated. ");
+        Student student = students.stream().filter(st -> st.getId()==id).findFirst().orElse(null);
+        if(student==null){
+            System.out.println("no student by that id");
+            return;
+        }
+        student.setId(std.id);
+        student.setName(std.name);
+        student.setCourse(std.course);
     }
     //function to delete
     public void deleteByID(int id){

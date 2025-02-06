@@ -2,5 +2,50 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
         "/Users/nandanalakshmijacob/Desktop/UST TRAINING/json-simple-1.1.1.jar"
+    ],
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "MyDatabase",
+            "username": "nandanajacob@gmail.com",
+            "database": "testdatabase"
+        },
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "nand_DB",
+            "database": "database",
+            "username": "tinu"
+        },
+        {
+            "port": 1025,
+            "tdsqlpreferences": {
+                "showuserdbs": false
+            },
+            "tdsqloptions": {
+                "logmech": "TD2",
+                "encryptdata": true,
+                "tmode": "ANSI"
+            },
+            "previewLimit": 50,
+            "driver": "SQLTools Teradata Driver",
+            "name": "teradta",
+            "server": "test",
+            "username": "root",
+            "password": "tinu3421"
+        }
     ]
 }
