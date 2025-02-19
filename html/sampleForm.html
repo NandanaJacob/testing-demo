@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>FORM EXAMPLE</title>
+    </head>
+    <body>
+    <form action="url">
+        <label for="user">Enter username: <input type="text" id="user"><br></label>
+
+        Enter password: <input type="password" required autofocus><br>
+
+        Enter age: <input type="number" min="1" max="100" width="100" placeholder="1 to 100 only"><br>
+
+        Enter date of birth: <input type="date"><br>
+
+        Enter email: <input type="email"><br>
+
+        Gender:<br> <input type="radio" value="Male" name="rl">Male<br>
+                <input type="radio" value="Female" name="rl">Female<br>
+
+        Language:<br>
+            <input type="checkbox" value="English" name="cl">English<br>
+            <input type="checkbox" value="Malayalam" name="cl">Malayalam<br>
+            <input type="checkbox" value="Arabic" name="cl">Arabic<br>
+            <input type="checkbox" value="Turkish" name="cl">Turkish<br>
+
+        Mobile number: <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        Select language:<br>
+        <select>
+            <option>C</option>
+            <option>C++</option>
+            <option selected>Java</option>
+            <option>Oracle</option>
+        </select><br>
+
+        Select file:<br>
+        <input type="file"><br>
+        
+        <input type="submit" value="login"><br>
+    </form>
+</body>
+</html>
